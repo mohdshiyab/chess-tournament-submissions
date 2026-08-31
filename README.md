@@ -11,7 +11,7 @@
 
 - **Live Website Application**: [https://chess-tournament-submissions-phi.vercel.app/](https://chess-tournament-submissions-phi.vercel.app/)
 - **Pull Request Submission**: [Pull Request #78](https://github.com/Kevindodiya75/chess-tournament-submissions/pull/78)
-- **Resume Attachment:**[Mohammad_Shiyabuddeen_Resume.pdf](https://github.com/user-attachments/files/31638043/Mohammad_Shiyabuddeen_Resume.pdf)
+- **Resume Attachment:** [Mohammad_Shiyabuddeen_Resume.pdf](https://github.com/user-attachments/files/31638043/Mohammad_Shiyabuddeen_Resume.pdf)
 
 ---
 
