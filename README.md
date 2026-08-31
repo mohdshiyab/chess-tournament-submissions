@@ -1,14 +1,16 @@
 # ♟️ ChessArena - Chess Tournament Management System
 
 > **Candidate Technical Assignment Submission for Bytelogik**  
-> Built with **Svelte**, **JavaScript**, **Vite**, **Tailwind CSS**, and **Dexie.js (IndexedDB Database)**.
+> **Candidate Name:** Mohammad Shiyabuddeen  
+> **Email:** shihabputtur2@gmail.com  
+> **Tech Stack:** Option 2 — **Svelte**, **JavaScript**, **Vite**, **Tailwind CSS**, and **Dexie.js (IndexedDB Database)**.
 
 ---
 
-## 🌟 Live Demo & Preview
+## 🌟 Live Demo & Deployment
 
-- **Live Website Demo**: [Deploy with Vercel / Netlify / GitHub Pages]
-- **Video Walkthrough**: Complete workflow demonstration covering Player CRUD, Tournament CRUD, Random Match Pairings, Match Simulation, and Top-3 Podium Rankings.
+- **Live Website Application**: [https://chess-tournament-submissions-phi.vercel.app/](https://chess-tournament-submissions-phi.vercel.app/)
+- **Pull Request Submission**: [Pull Request #78](https://github.com/Kevindodiya75/chess-tournament-submissions/pull/78)
 
 ---
 
@@ -58,10 +60,11 @@
 | **Database** | [Dexie.js](https://dexie.org/) (IndexedDB Wrapper) |
 | **Icons** | [Lucide Svelte](https://lucide.dev/) |
 | **Celebrations**| [Canvas Confetti](https://www.npmjs.com/package/canvas-confetti) |
+| **Deployment** | [Vercel](https://vercel.com/) |
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Getting Started Locally
 
 ### Prerequisites
 - Node.js (v18 or higher)
@@ -71,109 +74,5 @@
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/chess-tournament-submissions.git
+   git clone https://github.com/mohdshiyab/chess-tournament-submissions.git
    cd chess-tournament-submissions
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Start the development server:
-   ```bash
-   npm run dev
-   ```
-   Open [http://localhost:5173](http://localhost:5173) in your browser.
-
-4. Build for production:
-   ```bash
-   npm run build
-   ```
-
-5. Preview production build locally:
-   ```bash
-   npm run preview
-   ```
-
----
-
-## 🌐 Instant Live Deployment
-
-### Deploy to Vercel (Recommended)
-1. Push your repository to GitHub.
-2. Go to [vercel.com](https://vercel.com) and import the repository.
-3. Vercel will auto-detect Vite and deploy the live site in under 30 seconds.
-
-### Deploy to GitHub Pages
-1. In `vite.config.js`, set `base: './'`.
-2. Run `npm run build`.
-3. Deploy the `dist` folder to GitHub Pages.
-
----
-
-## 📂 Project Architecture
-
-```
-chess-tournament-system/
-├── public/
-│   └── favicon.svg                # Chess SVG logo
-├── src/
-│   ├── main.js                    # Svelte root mount
-│   ├── App.svelte                 # Main layout & navigation container
-│   ├── app.css                    # Tailwind CSS & glassmorphism theme
-│   ├── db/
-│   │   ├── database.js            # Dexie.js IndexedDB schema & CRUD services
-│   │   └── seedData.js            # Default Grandmasters & sample tournaments
-│   ├── services/
-│   │   ├── pairingService.js      # Fisher-Yates random matchmaking & bracket engine
-│   │   ├── simulationService.js   # Match outcome, round & full tournament simulation
-│   │   └── rankingService.js      # FIDE points calculation & top-3 podium resolver
-│   ├── utils/
-│   │   └── toastStore.js          # Reactive notification toast store
-│   └── components/
-│       ├── common/
-│       │   ├── Navbar.svelte      # Responsive header & database controls
-│       │   ├── Modal.svelte       # Accessible reusable modal dialog
-│       │   ├── Badge.svelte       # Status & chess title badges
-│       │   ├── Toast.svelte       # Floating alert toasts
-│       │   └── Confetti.svelte    # Celebration confetti generator
-│       ├── dashboard/
-│       │   └── Dashboard.svelte   # Overview metrics, active arenas & leaderboard
-│       ├── players/
-│       │   ├── PlayerList.svelte  # Searchable player CRUD table
-│       │   ├── PlayerFormModal.svelte    # Create/Edit player profile form
-│       │   └── PlayerDetailsModal.svelte # Career stats & W-D-L visual bar
-│       ├── tournaments/
-│       │   ├── TournamentList.svelte     # Tournament dashboard & CRUD cards
-│       │   ├── TournamentFormModal.svelte # Tournament creation/edit form
-│       │   ├── TournamentDetails.svelte  # Match arena, rounds & live bracket
-│       │   └── PlayerSelectorModal.svelte # Roster manager & player registration
-│       ├── matches/
-│       │   └── MatchCard.svelte   # Match card with White/Black piece badges & simulator
-│       └── rankings/
-│           ├── Podium.svelte      # 3D Gold, Silver, Bronze podium
-│           ├── StandingsTable.svelte     # Full tournament standings table
-│           └── GlobalRankings.svelte     # Multi-tournament ranking explorer
-├── tailwind.config.js
-├── postcss.config.js
-├── vite.config.js
-└── package.json
-```
-
----
-
-## 📜 Git Commit Log (Angular Convention)
-
-This project strictly adheres to the **Angular Commit Message Convention**:
-- `chore: initial project setup with svelte, vite, tailwind css, and dependencies`
-- `feat(db): implement indexeddb database schema and seed data with dexie.js`
-- `feat(engine): implement random match pairing, simulation service, and ranking algorithms`
-- `feat(ui): create responsive chess-themed tournament and player management interface`
-- `feat(rankings): implement 3d podium with 1st 2nd 3rd rankings and confetti celebration`
-- `docs: add comprehensive assignment documentation, setup guide, and deployment instructions`
-
----
-
-## 📄 License & Attribution
-Created for the **Bytelogik Software Developer Technical Evaluation**.
